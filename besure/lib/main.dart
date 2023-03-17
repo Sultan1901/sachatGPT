@@ -1,4 +1,4 @@
-import 'package:besure/view/screen/HomeScreen.dart';
+import 'package:besure/view/screen/OnboardingScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -9,13 +9,12 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Todo List using GetX',
+      title: 'Sum?',
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      home: Onbording(),
     );
   }
 }
