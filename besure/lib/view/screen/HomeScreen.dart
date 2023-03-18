@@ -66,10 +66,10 @@ class Home extends StatelessWidget {
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     children: [
-                                      Icon(
-                                        Icons.person_outline_rounded,
-                                        size: 35,
-                                      ),
+                                      // Icon(
+                                      //   Icons.person_outline_rounded,
+                                      //   size: 35,
+                                      // ),
                                       SizedBox(
                                         width: 10,
                                       ),
@@ -110,59 +110,63 @@ class Home extends StatelessWidget {
                             height: 30,
                           ),
                           Container(
-                              // padding: EdgeInsets.only(right: 200),
+                              alignment: Alignment.topLeft,
+                              padding: EdgeInsets.symmetric(
+                                  vertical: 5, horizontal: 20),
                               // width: 200,
                               // height: 100,
                               // color: Colors.lightBlue,
                               // margin: EdgeInsets.all(10),
                               child: Directionality(
-                            textDirection: TextDirection.ltr,
-                            child: Row(
-                              children: [
-                                CircleAvatar(
-                                  backgroundImage: AssetImage(
-                                    "assets/images/Logo1.Svg",
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                Container(
-                                  padding: EdgeInsets.all(10),
-                                  decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(8)),
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    // mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      Text(
-                                        "سمّ روبورت",
-                                        textAlign: TextAlign.left,
-                                        style: TextStyle(fontSize: 14),
-                                      ),
-                                      // SizedBox(
-                                      //   width: 100,
-                                      // ),
-                                      Text(
-                                        datacontroller.token[index],
-                                        // overflow: TextOverflow.ellipsis,
-                                        // maxLines: 10,
+                                textDirection: TextDirection.ltr,
+                                child: Column(
+                                  children: [
+                                    // CircleAvatar(
+                                    //   backgroundColor: Color(0xFFF2F1F7),
+                                    //   backgroundImage: AssetImage(
+                                    //     "assets/images/Logo1.Svg",
+                                    //   ),
+                                    // ),
+                                    SizedBox(
+                                      width: 10,
+                                    ),
+                                    Container(
+                                      padding: EdgeInsets.all(10),
+                                      decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(8)),
+                                      child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        // mainAxisSize: MainAxisSize.min,
+                                        children: [
+                                          Text(
+                                            "سمّ روبورت",
+                                            textAlign: TextAlign.left,
+                                            style: TextStyle(fontSize: 14),
+                                          ),
+                                          SizedBox(
+                                            height: 10,
+                                          ),
+                                          Text(
+                                            datacontroller.token[index],
+                                            // overflow: TextOverflow.ellipsis,
+                                            // maxLines: 10,
 
-                                        style: TextStyle(fontSize: 12),
+                                            style: TextStyle(fontSize: 12),
+                                          ),
+                                        ],
                                       ),
-                                    ],
-                                  ),
+                                    ),
+                                  ],
                                 ),
-                              ],
-                            ),
-                          )),
+                              )),
                         ],
                       );
                     }),
                     separatorBuilder: (context, index) => SizedBox(
-                      height: 10,
+                      height: 15,
                     ),
                   ),
                 ),
