@@ -44,8 +44,7 @@ class _OnbordingState extends State<Onbording> {
                   padding: const EdgeInsets.all(40),
                   child: Column(
                     children: [
-                      Image.asset(
-                          '/Users/dylan./Desktop/sachatGPT/besure/assets/images/Logo1.Svg'),
+                      Image.asset('assets/images/Logo1.Svg'),
                       Text(
                         contents[i].title,
                         style: const TextStyle(
