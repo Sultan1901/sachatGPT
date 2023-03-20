@@ -26,7 +26,7 @@ class DataController extends GetxController {
     final headers = {
       'Content-Type': 'application/json',
       'customer-id': '577486869',
-      'x-api-key': 'zqt_ImvAFTbNbnoPBuKtjYUQS7Q1UzKJ_LeaXyAOOg'
+      'x-api-key': 'seceret'
     };
     final json = jsonEncode(({
       "model": "gpt-3.5-turbo",
